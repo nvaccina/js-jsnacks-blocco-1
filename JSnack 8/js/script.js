@@ -3,21 +3,25 @@ Chiedi un numero di 4 cifre all’utente e calcola la somma di tutte le cifre ch
 In questo caso possiamo sfruttare a nostro vantaggio il fatto che la funzione prompt restituisca una stringa anche se si è digitato un numero e recuperare una cifra alla volta usando il ciclo for per scorrere la stringa numerica
 */
 
-
-const numeroInserito = prompt('Inserisci un numero di 4 cifre');
+let numeroInserito = prompt('Inserisci un numero di 4 cifre');
 
 console.log(numeroInserito);
 
+let arrayNumeri = numeroInserito.split('');
 
-for(let i = 0; i < numeroInserito.length; i++){
+for (let i = 0; i < arrayNumeri.length; i++);
 
-  sommaNumeri += arrayNumeri[i];  
-}
-console.log(sommaNumeri);
+console.log(arrayNumeri);
 
-/*
+let somma = 0;
+
+arrayNumeri.forEach(numero=>{
+  somma += numero;
+})
+console.log(somma);
+
+
 const message = `
-La somma dei numeri che compongono ${numeroInserito} è ${sommaWhile}.
+La somma dei numeri che compongono ${numeroInserito} è ${somma}.
 `
-document.getElementById('output2').innerHTML = message;
-*/
+document.getElementById('output').innerHTML = message;
