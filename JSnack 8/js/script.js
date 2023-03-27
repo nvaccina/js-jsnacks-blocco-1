@@ -8,12 +8,9 @@ const numeroInserito = prompt('Inserisci un numero di 4 cifre');
 
 console.log(numeroInserito);
 
-const arrayNumeri = numeroInserito.split('');
-console.log(arrayNumeri);
 
-let sommaNumeri = 0;
+for(let i = 0; i < numeroInserito.length; i++){
 
-for(let i = 0; i < arrayNumeri.length; i++){
   sommaNumeri += arrayNumeri[i];  
 }
 console.log(sommaNumeri);
