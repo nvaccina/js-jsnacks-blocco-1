@@ -14,3 +14,12 @@ while((Math.pow(2, [counter])) < 1000){
   console.log(risultato);
 }
 
+//Soluzione di Stefano
+
+const limiteRisultato = 1000;
+let potenza = 1;
+
+while(potenza < limiteRisultato){
+  console.log(limiteRisultato);
+  potenza ** 2;
+}

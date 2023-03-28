@@ -7,9 +7,7 @@ const dispari = [];
 
 for(let i = 0; i < 6; i++){
 
-  const numero = prompt('Inserisci un numero');
-
-  
+  const numero = parseInt(prompt('Inserisci un numero'));
 
   if(numero % 2){
     dispari.push(numero);
